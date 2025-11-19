@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung Perkembangan Saldo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<button id="darkBtn" class="dark-toggle" onclick="toggleDarkMode()">🌙</button>
+
+<div class="container">
+    <h1>Hitung Perkembangan Saldo</h1>
+
+    <label>Saldo Awal:</label>
+    <input type="number" id="saldoAwal" placeholder="Masukkan nominal">
+
+    <label>Penghasilan per Bulan:</label>
+    <input type="number" id="penghasilan" placeholder="Masukkan nominal">
+
+    <label>Pengeluaran per Bulan:</label>
+    <input type="number" id="pengeluaran" placeholder="Masukkan nominal">
+
+    <label>Target Saldo (opsional):</label>
+    <input type="number" id="target" placeholder="Misal: 50000000">
+
+    <label>Simulasi Berapa Tahun?</label>
+    <input type="number" id="durasi" placeholder="Misal: 20">
+
+    <button onclick="hitung()">Hitung</button>
+    <button onclick="resetAll()" style="margin-top:10px; background:#e74c3c;">Reset</button>
+
+    <div id="hasil"></div>
+    <div id="habis"></div>
+    <div id="targetInfo"></div>
+
+    <canvas id="grafikSaldo" height="120"></canvas>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
