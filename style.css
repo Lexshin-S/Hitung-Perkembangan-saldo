@@ -1,0 +1,90 @@
+body {
+    background: #f0f2f5;
+    font-family: Arial, sans-serif;
+    transition: 0.3s;
+}
+
+.container {
+    width: 400px;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #2f80ed;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #1763d1;
+}
+
+#hasil {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.green { color: green; font-weight: bold; }
+.red { color: red; font-weight: bold; }
+
+#habis, #targetInfo {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Dark Mode */
+.dark {
+    background: #1e1e1e;
+    color: white;
+}
+
+.dark .container {
+    background: #2c2c2c;
+    color: white;
+}
+
+.dark input {
+    background: #3b3b3b;
+    color: white;
+    border: 1px solid #555;
+}
+
+.dark button {
+    background: #1b66c9;
+}
+
+.dark-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+
+background: linear-gradient(135deg, #0f172a);
+}
+
